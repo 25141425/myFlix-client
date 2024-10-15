@@ -1,4 +1,7 @@
+import "./movie-view.scss";
+import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
+
 export const MovieView = ({ movie, onBackClick }) => {
   return (
     <div>
@@ -21,7 +24,7 @@ export const MovieView = ({ movie, onBackClick }) => {
       <span>Genre: </span>
       <span>{movie.genre}</span>
       </div>
-      <button onClick={onBackClick}>Return to movies</button>
+      <Button variant="primary" onClick={onBackClick} className="back-button" style={{color:"white"}}>Return to movies</Button>
     </div>
   );
 };
