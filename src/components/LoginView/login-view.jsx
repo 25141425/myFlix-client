@@ -51,7 +51,7 @@ export const LoginView = ({onLoggedIn}) => {
           />
      </Form.Group>
 
-     <Form.Group controlID="formPassword">
+     <Form.Group controlId="formPassword">
         <Form.Label></Form.Label>
         <Form.Control
         type="password"
