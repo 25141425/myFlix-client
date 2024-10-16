@@ -53,13 +53,13 @@ export const MainView = () => {
             }}
           />
           
-      <div className="justify-content-center my-5">
+      <div className="d-flex justify-content-center my-5">
         Don't have an account yet? Sign up!
       </div>
           <SignupView />
         </Col>
       ) : selectedMovie ? (
-        <Col md={8}>
+        <Col className="d-flex justify-content-md-center" md={3}>
           <MovieView
             movie={selectedMovie}
             onBackClick={() => setSelectedMovie(null)}

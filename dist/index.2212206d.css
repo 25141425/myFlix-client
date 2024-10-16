@@ -13187,4 +13187,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.list-group-item {
+  color: #fff;
+  background-color: #323232;
+  border-color: #323232;
+}
+
+.list-group {
+  background-color: #323232;
+}
 /*# sourceMappingURL=index.2212206d.css.map */
