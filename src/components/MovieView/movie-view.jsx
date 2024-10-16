@@ -1,33 +1,29 @@
 import "./movie-view.scss";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 export const MovieView = ({ movie, onBackClick }) => {
   return (
-    <div>
-      <div>
-        <img src={movie.image} />
-      </div>
-      <div>
-        <span>Title: </span>
-        <span>{movie.title}</span>
-      </div>
-      <div>
-      <span>Description: </span>
-      <span>{movie.description} </span>
-      </div>
-      <div>
-        <span>Director: </span>
-        <span>{movie.director}</span>
-      </div>
-      <div>
-      <span>Genre: </span>
-      <span>{movie.genre}</span>
-      </div>
+    <Card style={{ width: '20rem', backgroundColor: "#323232" }}>
+      <Card.Img variant="top" src={movie.image} />
+      <Card.Body style={{backgroundColor:"#323232", color:"white"}}>
+        <Card.Title>{movie.title}</Card.Title>
+        <Card.Text>
+          {movie.description}
+        </Card.Text>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>Director: {movie.director}</ListGroup.Item>
+        <ListGroup.Item>Genre: {movie.genre}</ListGroup.Item>
+      </ListGroup>
+      <Card.Body className="d-flex justify-content-md-center">
       <Button variant="primary" onClick={onBackClick} className="back-button" style={{color:"white"}}>Return to movies</Button>
-    </div>
+      </Card.Body>
+    </Card>
   );
-};
+}
 
 MovieView.propTypes = {
   movie: PropTypes.shape({
