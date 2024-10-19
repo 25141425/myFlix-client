@@ -1,13 +1,8 @@
+import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from "react-router-dom";
-
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
 
 export const NavBar = ({ user, onLoggedOut }) => {
   return (
@@ -21,7 +16,11 @@ export const NavBar = ({ user, onLoggedOut }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* Login Link (only visible if user is not logged in) */}
+            {user && (
+                <Nav.Link as={Link} to="/favorites">
+                  Favorites
+                </Nav.Link>
+              )}
             {!user && (
               <Nav.Link as={Link} to="/login">
                 Login
@@ -33,13 +32,23 @@ export const NavBar = ({ user, onLoggedOut }) => {
               </Nav.Link>
             )}
             {user && (
+              <Nav.Link as={Link} to="/profile">
+                Profile
+              </Nav.Link>
+            )}
+            {user && (
               <Nav.Link onClick={onLoggedOut}>
                 Logout
               </Nav.Link>
-            )}
+            )}  
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
+};
+
+NavBar.propTypes = {
+  user: PropTypes.object, 
+  onLoggedOut: PropTypes.func.isRequired, 
 };

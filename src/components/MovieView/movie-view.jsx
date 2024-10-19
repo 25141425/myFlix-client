@@ -10,7 +10,6 @@ export const MovieView = ({ movies }) => {
   const {movieId} = useParams();
   const movie = movies.find((m) => m.id === movieId);
   
-
   return (
     <Card style={{ width: '15rem', backgroundColor: "#323232" }}>
       <Card.Img variant="top" src={movie.image} />
@@ -36,7 +35,7 @@ export const MovieView = ({ movies }) => {
 MovieView.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired, // make sure to include the id
+      id: PropTypes.string.isRequired, 
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       director: PropTypes.string.isRequired,
