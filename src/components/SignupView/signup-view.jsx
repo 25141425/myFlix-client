@@ -74,6 +74,15 @@ export const SignupView = () => {
         </Form.Text>
       </Form.Group>
 
+      <Form.Group controlId="formBirthday">
+        <Form.Label></Form.Label>
+        <Form.Control
+          type="date"
+          value={birthday}
+          onChange={(e) => setBirthday(e.target.value)}
+          />
+      </Form.Group>
+
       <div className="d-flex justify-content-center mt-3">
         <Button variant="primary" type="submit" style={{color:"white"}}>
           Submit
