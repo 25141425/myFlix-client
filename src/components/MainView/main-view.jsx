@@ -54,7 +54,7 @@ export const MainView = () => {
   return (
     <BrowserRouter>
       <NavBar user={user} onLoggedOut={onLoggedOut} />
-      <Row className="justify-content-md-center" style={{ height: "50vh", alignItems: "center" }}>
+      <Row className="justify-content-center" style={{ height: "50vh", alignItems: "center" }}>
         <Routes>
           <Route
             path="/signup"
@@ -111,10 +111,9 @@ export const MainView = () => {
                 <>
                   {!user ? (
                     <Navigate to="/login" replace />
-                  ) : movies.length === 0 ? (
-                    <Col>No movies available!</Col>
-                  ) : (
-                    <Col className="d-flex flex-column align-items-center" md={8}>
+                  ) 
+                  : (
+                    <Col className="d-flex flex-column" md={5} >
                       <ProfileView user={user} token={token} />
                       <div className="mt-4"> 
                         <UpdateUser user={user} token={token} setUser={setUser} />
@@ -131,9 +130,8 @@ export const MainView = () => {
             <>
               {!user ? (
                 <Navigate to="/login" replace />
-              ) : movies.length === 0 ? (
-                <Col>No movies available!</Col>
-              ) : (
+              ) 
+              : (
                 <Col className="d-flex flex-column align-items-center" md={8}>
                     <DeleteUser user={user} token={token} onLoggedOut={onLoggedOut} />
                 </Col>

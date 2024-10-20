@@ -117,9 +117,14 @@ export const UpdateUser = ({ user, token, setUser }) => {
           </Button>
         </div>
       </Form>
-      <div className="d-flex justify-content-center mt-3">
-        <Button variant="danger" as={Link} to="/profile/delete">
-          Delete Account
+      <div className="d-flex justify-content-center align-items-center mt-3" style={{ height: '200px' }}>
+        <Button
+            variant="danger"
+            as={Link}
+            to="/profile/delete"
+            className="d-flex justify-content-center align-items-center"
+        >
+        Delete Account
         </Button>
       </div>
     </>
