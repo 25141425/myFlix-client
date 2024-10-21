@@ -31,11 +31,11 @@ export const MovieCard = ({ movie, user, token }) => {
       <Card.Body style={{ backgroundColor: "#323232", color: "white" }}>
         <Card.Title>{movie.title}</Card.Title>
         <Card.Text>{movie.director}</Card.Text>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: "10px" }}>
-          <Button variant="primary" style={{color: "white"}} as={Link} to={`/movies/${encodeURIComponent(movie.id)}`}>
+        <div className="d-flex justify-content-between align-items-center mt-3">
+          <Button variant="primary" className="btn btn-primary flex-grow-1 me-2" style={{color: "white"}} as={Link} to={`/movies/${encodeURIComponent(movie.id)}`}>
           See more
         </Button>
-          <Button variant="danger" onClick={AddToFavorites}>
+          <Button variant="danger" className="btn btn-danger flex-grow-1" onClick={AddToFavorites}>
             Add to Favorites
           </Button>
         </div>

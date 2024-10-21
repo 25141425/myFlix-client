@@ -28588,7 +28588,10 @@ const MainView = ()=>{
                                 }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                                     children: movies.map((movie)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
                                             className: "mb-4",
-                                            md: 3,
+                                            xs: 12,
+                                            sm: 6,
+                                            md: 4,
+                                            lg: 3,
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieCard.MovieCard), {
                                                 user: user,
                                                 token: token,
@@ -28639,7 +28642,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../MovieCard/movie-card":"dg3Ls","../MovieView/movie-view":"9Uua1","../LoginView/login-view":"6cJc6","../SignupView/signup-view":"bpvce","../ProfileView/profile-view":"kSwFP","../NavigationBar/navigation-bar":"3fCaw","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","../ProfileView/delete-account":"kUFs2","../FavoritesView/favorites":"cUWku"}],"dg3Ls":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../MovieCard/movie-card":"dg3Ls","../MovieView/movie-view":"9Uua1","../LoginView/login-view":"6cJc6","../SignupView/signup-view":"bpvce","../ProfileView/profile-view":"kSwFP","../ProfileView/delete-account":"kUFs2","../FavoritesView/favorites":"cUWku","../NavigationBar/navigation-bar":"3fCaw","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}],"dg3Ls":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2506 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28706,14 +28709,11 @@ const MovieCard = ({ movie, user, token })=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            justifyContent: "space-between",
-                            marginTop: "10px"
-                        },
+                        className: "d-flex justify-content-between align-items-center mt-3",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                                 variant: "primary",
+                                className: "btn btn-primary flex-grow-1 me-2",
                                 style: {
                                     color: "white"
                                 },
@@ -28727,6 +28727,7 @@ const MovieCard = ({ movie, user, token })=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                                 variant: "danger",
+                                className: "btn btn-danger flex-grow-1",
                                 onClick: AddToFavorites,
                                 children: "Add to Favorites"
                             }, void 0, false, {
@@ -42563,7 +42564,7 @@ $RefreshReg$(_c, "LoginView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap/Button":"aPzUt","react-bootstrap/Form":"iBZ80","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","prop-types":"7wKI2"}],"bpvce":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","react-bootstrap/Button":"aPzUt","react-bootstrap/Form":"iBZ80","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}],"bpvce":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9983 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43048,134 +43049,7 @@ $RefreshReg$(_c1, "UpdateUser");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react-bootstrap/Button":"aPzUt","react":"21dqq","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","prop-types":"7wKI2"}],"3fCaw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5409 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5409.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NavBar", ()=>NavBar);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _container = require("react-bootstrap/Container");
-var _containerDefault = parcelHelpers.interopDefault(_container);
-var _nav = require("react-bootstrap/Nav");
-var _navDefault = parcelHelpers.interopDefault(_nav);
-var _navbar = require("react-bootstrap/Navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _reactRouterDom = require("react-router-dom");
-const NavBar = ({ user, onLoggedOut })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {
-        bg: "light",
-        expand: "lg",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {
-            children: [
-                user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Brand, {
-                    as: (0, _reactRouterDom.Link),
-                    to: "/",
-                    children: "MyFlix"
-                }, void 0, false, {
-                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                    lineNumber: 12,
-                    columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Toggle, {
-                    "aria-controls": "basic-navbar-nav"
-                }, void 0, false, {
-                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Collapse, {
-                    id: "basic-navbar-nav",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default), {
-                        className: "me-auto",
-                        children: [
-                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                                as: (0, _reactRouterDom.Link),
-                                to: "/favorites",
-                                children: "Favorites"
-                            }, void 0, false, {
-                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                                lineNumber: 20,
-                                columnNumber: 17
-                            }, undefined),
-                            !user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                                as: (0, _reactRouterDom.Link),
-                                to: "/login",
-                                children: "Login"
-                            }, void 0, false, {
-                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                                lineNumber: 25,
-                                columnNumber: 15
-                            }, undefined),
-                            !user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                                as: (0, _reactRouterDom.Link),
-                                to: "/signup",
-                                children: "Signup"
-                            }, void 0, false, {
-                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                                lineNumber: 30,
-                                columnNumber: 15
-                            }, undefined),
-                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                                as: (0, _reactRouterDom.Link),
-                                to: "/profile",
-                                children: "Profile"
-                            }, void 0, false, {
-                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                                lineNumber: 35,
-                                columnNumber: 15
-                            }, undefined),
-                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                                onClick: onLoggedOut,
-                                children: "Logout"
-                            }, void 0, false, {
-                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                                lineNumber: 40,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                        lineNumber: 18,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
-                    lineNumber: 17,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/NavigationBar/navigation-bar.jsx",
-            lineNumber: 10,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/NavigationBar/navigation-bar.jsx",
-        lineNumber: 9,
-        columnNumber: 5
-    }, undefined);
-};
-_c = NavBar;
-NavBar.propTypes = {
-    user: (0, _propTypesDefault.default).object,
-    onLoggedOut: (0, _propTypesDefault.default).func.isRequired
-};
-var _c;
-$RefreshReg$(_c, "NavBar");
-
-  $parcel$ReactRefreshHelpers$5409.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-bootstrap/Container":"hEdsw","react-bootstrap/Nav":"cXyL2","react-bootstrap/Navbar":"1mHjo","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","prop-types":"7wKI2"}],"kUFs2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-router-dom":"9xmpe","react-bootstrap/Button":"aPzUt","react":"21dqq","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}],"kUFs2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$37b7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43283,7 +43157,7 @@ $RefreshReg$(_c, "DeleteUser");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-bootstrap/Button":"aPzUt","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","react-router-dom":"9xmpe","prop-types":"7wKI2"}],"cUWku":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-router-dom":"9xmpe","react-bootstrap/Button":"aPzUt","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}],"cUWku":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$542d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43459,6 +43333,133 @@ $RefreshReg$(_c, "Favorites");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-bootstrap":"3AD9A","react-bootstrap/ListGroup":"4tGXh","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC","react":"21dqq"}]},["1GoAO","dAPVv","d8Dch"], "d8Dch", "parcelRequireaec4")
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","react-bootstrap":"3AD9A","react-bootstrap/ListGroup":"4tGXh","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}],"3fCaw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5409 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5409.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NavBar", ()=>NavBar);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _container = require("react-bootstrap/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _nav = require("react-bootstrap/Nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+var _navbar = require("react-bootstrap/Navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactRouterDom = require("react-router-dom");
+const NavBar = ({ user, onLoggedOut })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {
+        bg: "light",
+        expand: "lg",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {
+            children: [
+                user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Brand, {
+                    as: (0, _reactRouterDom.Link),
+                    to: "/",
+                    children: "MyFlix"
+                }, void 0, false, {
+                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                    lineNumber: 12,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Toggle, {
+                    "aria-controls": "basic-navbar-nav"
+                }, void 0, false, {
+                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default).Collapse, {
+                    id: "basic-navbar-nav",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default), {
+                        className: "me-auto",
+                        children: [
+                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
+                                as: (0, _reactRouterDom.Link),
+                                to: "/favorites",
+                                children: "Favorites"
+                            }, void 0, false, {
+                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                                lineNumber: 20,
+                                columnNumber: 17
+                            }, undefined),
+                            !user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
+                                as: (0, _reactRouterDom.Link),
+                                to: "/login",
+                                children: "Login"
+                            }, void 0, false, {
+                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                                lineNumber: 25,
+                                columnNumber: 15
+                            }, undefined),
+                            !user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
+                                as: (0, _reactRouterDom.Link),
+                                to: "/signup",
+                                children: "Signup"
+                            }, void 0, false, {
+                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                                lineNumber: 30,
+                                columnNumber: 15
+                            }, undefined),
+                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
+                                as: (0, _reactRouterDom.Link),
+                                to: "/profile",
+                                children: "Profile"
+                            }, void 0, false, {
+                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                                lineNumber: 35,
+                                columnNumber: 15
+                            }, undefined),
+                            user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
+                                onClick: onLoggedOut,
+                                children: "Logout"
+                            }, void 0, false, {
+                                fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                                lineNumber: 40,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/NavigationBar/navigation-bar.jsx",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/NavigationBar/navigation-bar.jsx",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/NavigationBar/navigation-bar.jsx",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = NavBar;
+NavBar.propTypes = {
+    user: (0, _propTypesDefault.default).object,
+    onLoggedOut: (0, _propTypesDefault.default).func.isRequired
+};
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$5409.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-bootstrap/Container":"hEdsw","react-bootstrap/Nav":"cXyL2","react-bootstrap/Navbar":"1mHjo","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fDiVC"}]},["1GoAO","dAPVv","d8Dch"], "d8Dch", "parcelRequireaec4")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
